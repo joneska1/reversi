@@ -142,7 +142,7 @@ socket.on('join_room',function(payload){
 
 		});
 
-socket.on('disconnect',function(socket){
+socket.on('disconnect',function(){
 		log('Client disconnected '+JSON.stringify(players[socket.id]));
 
 		if('undefined' !== typeof players[socket.id] && players[socket.id]){
