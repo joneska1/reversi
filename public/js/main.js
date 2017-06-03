@@ -321,41 +321,41 @@ for(row = 0; row < 8; row++){
 		/* if a board space has changed */
 		if(old_board[row][column] != board [row][column]){
 			if(old_board[row][column] == '?' && board[row][column] == ' '){
-				$('#'+row+'_'+column).html('<img src="assets/images/empty.gif" alt="empty square"/>');
+				$('#'+row+'_'+column).html('<img src="Assets/Images/empty.gif" alt="empty square"/>');
 			}
 
 		else if(old_board[row][column] == '?' && board[row][column] == 'w'){
-				$('#'+row+'_'+column).html('<img src="assets/images/empty_to_white.gif" alt="white square"/>');
+				$('#'+row+'_'+column).html('<img src="Assets/Images/empty_to_white.gif" alt="white square"/>');
 			}
 
 		else if(old_board[row][column] == '?' && board[row][column] == 'b'){
-				$('#'+row+'_'+column).html('<img src="assets/images/empty_to_black.gif" alt="black square"/>');
+				$('#'+row+'_'+column).html('<img src="Assets/Images/empty_to_black.gif" alt="black square"/>');
 			}
 		else if(old_board[row][column] == ' ' && board[row][column] == 'w'){
-				$('#'+row+'_'+column).html('<img src="assets/images/empty_to_white.gif" alt="white square"/>');
+				$('#'+row+'_'+column).html('<img src="Assets/Images/empty_to_white.gif" alt="white square"/>');
 			}
 
 		else if(old_board[row][column] == ' ' && board[row][column] == 'b'){
-				$('#'+row+'_'+column).html('<img src="assets/images/empty_to_black.gif" alt="black square"/>');
+				$('#'+row+'_'+column).html('<img src="Assets/Images/empty_to_black.gif" alt="black square"/>');
 			}
 
 		else if(old_board[row][column] == 'w' && board[row][column] == ' '){
-				$('#'+row+'_'+column).html('<img src="assets/images/white_to_empty.gif" alt="empty square"/>');
+				$('#'+row+'_'+column).html('<img src="Assets/Images/white_to_empty.gif" alt="empty square"/>');
 			}
 
 		else if(old_board[row][column] == 'b' && board[row][column] == ' '){
-				$('#'+row+'_'+column).html('<img src="assets/images/black_to_empty.gif" alt="empty square"/>');
+				$('#'+row+'_'+column).html('<img src="Assets/Images/black_to_empty.gif" alt="empty square"/>');
 			}
 
 		else if(old_board[row][column] == 'w' && board[row][column] == 'b'){
-				$('#'+row+'_'+column).html('<img src="assets/images/white_to_black.gif" alt="black square"/>');
+				$('#'+row+'_'+column).html('<img src="Assets/Images/white_to_black.gif" alt="black square"/>');
 			}
 
 		else if(old_board[row][column] == 'b' && board[row][column] == 'w'){
-				$('#'+row+'_'+column).html('<img src="assets/images/black_to_white.gif" alt="white square"/>');
+				$('#'+row+'_'+column).html('<img src="Assets/Images/black_to_white.gif" alt="white square"/>');
 				}
 		else{
-				$('#'+row+'_'+column).html('<img src="assets/images/error.gif" alt="error"/>');
+				$('#'+row+'_'+column).html('<img src="Assets/Images/error.gif" alt="error"/>');
 			}
 
 		/* set up interactivity */
