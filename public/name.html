@@ -10,6 +10,11 @@
     <style>
       #header-row {
         background-color: #e0dfdf;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      form {
+        padding-top: 10px;
       }
     </style>
 
@@ -25,10 +30,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <body>
-     <div class="container-fluid text-center">
+       <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="name.html">Start a Game</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="https://en.wikipedia.org/wiki/Reversi" target="_blank">Rules</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>  
+    </ul>
+  </div>
+</nav>
+     <div class="container-fluid text-left">
 	<div class="row" id="header-row">
 		<div class="col">
-		  <h2>Enter your username.</h2>
+		  <h2>It's time to play Reversi!</h2>
+      <p>Enter your username to get started.</p>
 		</div>
 	</div>
       <div class 'row'>
@@ -38,7 +65,7 @@
             <label for='username' class= 'col-form-label sr-only'>Enter your username</label>
             <input class='form-control' type='text' value='' id='username' placeholder="Enter your username" />
           </div>
-          <button type='submit' class= 'btn btn-default btn-primary'> Done </button>
+          <button type='submit' class= 'btn btn-default btn-primary'> Join the Game Lobby </button>
         </form>
         </div>
       </div>

@@ -49,12 +49,12 @@ socket.on('join_room_response',function(payload){
 		var nodeC = $('<div></div>');
 		nodeC.addClass('socket_'+payload.socket_id);
 
-		nodeA.addClass('w=100');
-
-		nodeB.addClass('col-9 text-right');
+		nodeA.addClass('w=25');
+		
+		nodeB.addClass('col-3 text-left');
 		nodeB.append('<h4>'+payload.username+'</h4>');
 
-		nodeC.addClass('col-3 text-left');
+		nodeC.addClass('col-3 text-right');
 		var buttonC = makeInviteButton(payload.socket_id);
 		nodeC.append(buttonC);
 
@@ -232,7 +232,7 @@ function makeInvitedButton(socket_id) {
 
 function makePlayButton(socket_id) {
 
-	var newHTML = '<button type=\'button\' class=\'btn btn-success\'>Play</button>';
+	var newHTML = '<button type=\'button\' class=\'btn btn-warning\'>Play</button>';
 	var newNode = $(newHTML);
 	newNode.click(function(){
 		game_start(socket_id);
